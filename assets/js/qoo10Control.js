@@ -28,10 +28,3 @@ function purchase(cnt) {
 }
 
 checkCountAndPurchase()
-
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  if (request.action == "isQoo10ControlLoaded") {
-    console.log("isQoo10ControlLoaded received");    
-    sendResponse(true);
-  }
-});
